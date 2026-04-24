@@ -14,10 +14,10 @@ onlyoffice-bin
 vlc
 fastfetch
   ];
+
     services.xserver.enable = true;
     services.displayManager.sddm.enable = true;
     services.desktopManager.plasma6.enable = true;
     
     nix.settings.auto-optimise-store = true;
-
 }
