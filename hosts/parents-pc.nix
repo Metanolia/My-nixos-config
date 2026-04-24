@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 {
- imports = [ ./hardware-parents-pc.nix ];
+# imports = [ ./hardware-parents-pc.nix ];
   
   boot.loader.systemd-boot.enable = true;
   networking.networkManager.enable = true;
