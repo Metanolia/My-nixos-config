@@ -4,7 +4,7 @@
 # imports = [ ./hardware-parents-pc.nix ];
   
   boot.loader.systemd-boot.enable = true;
-  networking.networkManager.enable = true;
+  networking.networkmanager.enable = true;
   time.timeZone = "Europe/Moscow";
 
   environment.systemPackages = with pkgs; [
