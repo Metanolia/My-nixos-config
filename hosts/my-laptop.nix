@@ -130,7 +130,9 @@
  nix-direnv
  chromium
  rustdesk-flutter
- ];
+ exfatprogs
+ exfat
+];
   #  vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
  
 
@@ -159,7 +161,7 @@
   # this value at the release version of the first install of this system.
   # Before changing this value read the documentation for this option
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
-  system.stateVersion = "25.11"; # Did you read the comment?
+  system.stateVersion = "25.11";
 
 programs.fish.enable = true;
 users.users.Meta = {
@@ -188,7 +190,7 @@ programs.gamemode.enable = true;
 virtualisation.podman = { enable = true;
 dockerCompat = true; };
 
-services.v2raya.enable = true;
+# services.v2raya.enable = true;
 
 hardware.bluetooth.enable = true;
 hardware.bluetooth.powerOnBoot = true;
